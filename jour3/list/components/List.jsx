@@ -29,7 +29,7 @@ export default class List extends Component {
               <Text style={styles.liste}>
                 {item.name} - {item.capital}
               </Text>
-              <SvgUri style={styles.img} uri={`${item.flag}`} />
+              <SvgUri style={styles.img} width="100" height="100" resizeMode="center" uri={`${item.flag}`} />
             </>
           )}
         />
@@ -44,10 +44,8 @@ const styles = StyleSheet.create({
     marginBottom: 8,
   },
   img: {
-      flex: 1,
-      alignItems: "center", 
-      justifyContent: "center",
-      width: null,
-      height: null,
+     
   }
 })
+
+
